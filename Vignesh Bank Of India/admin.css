@@ -1,0 +1,102 @@
+body{
+    background-color: blanchedalmond;
+    margin-bottom: 10px;
+}
+
+#welcome{
+    font-size: 35px;
+    color: brown;
+}
+
+#logout{
+    float: right;
+    margin-top: 1%;
+    margin-right: 3%;
+    background-color: orangered;
+    border: 2px solid red;
+    color: white;
+}
+.fa-building-columns{
+    font-size: 40px !important;
+}
+
+
+
+#icon{
+    font-size: 30px;
+    color: goldenrod;
+}
+.accounts{
+    background-color: rgba(245, 139, 10, 0.957);
+    border-radius: 20%;
+    text-align: center;
+    padding: 1px;
+    font-size: 25px;
+    color: white;
+}
+
+.accounts:hover{
+    transform: scale(1.1, 1.1);
+}
+
+#withdrawMoney{
+    height: 27vh;
+    width: 42%;
+    float: left;
+    margin-right: 20px;
+}
+
+#depositMoney{
+    height: 27vh;
+    width: 42%;
+    float: right;
+    margin-right: 20px;
+}
+
+#transferMoney{
+    height: 27vh;
+    width: 42%;
+    float: left;
+    margin-left: 10px;
+    margin-top: 3%;
+}
+
+#loans{
+    height: 27vh;
+    width: 42%;
+    float: right;
+    margin-right: 10px;
+    margin-top: 3%;
+}
+.fa-hand-holding-dollar, .fa-money-bill-transfer, .fa-sack-dollar, .fa-piggy-bank{
+    font-size: 50px !important;
+    color: rgba(220, 26, 26, 0.824);
+}
+
+
+.labels{
+    color: red;
+}
+
+.inputFields{
+    width: 60%;
+    border: none;
+    border-bottom: 2px solid orange;
+    background-color: transparent;
+}
+
+#amount, #amountdeposit{
+    border: none;
+    border-bottom: 2px solid orange;
+    background-color: transparent;
+}
+
+#withdaw, #deposit, #transfer, #loan, #calculate{
+    background-color: orange;
+    border: 1px solid red;
+    margin-left: 30%;
+}
+
+#loan{
+    margin-left: 1%;
+}

@@ -1,0 +1,178 @@
+#cautionMessage{
+    background-color:coral ;
+}
+.fa-user{
+    font-size: 100px !important;
+}
+
+#userRegister{
+    display: none;
+    margin-right: 30%;
+}
+
+.user{
+    text-align: center;
+}
+
+body{
+    background-color: blanchedalmond;
+    margin-bottom: 10px;
+}
+
+#welcomeScreen{
+    float: left;
+    margin-left: 25%;
+    height: 400px;
+    width:20%;
+    background-color: orange;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color:blanchedalmond;
+}
+
+#welcome{
+    font-size: 20px;
+    font-family: "arial";
+}
+#userLogin{
+    float: right;
+    margin-right: 30%
+}
+#bankOfIndia{
+    font-family: "impact";
+    font-size: 40px;
+}
+
+.bankLogin{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: transparent;
+    border-bottom: 2px solid orange;
+    color: tomato;
+}
+
+#login{
+    border:none;
+    background-color: transparent;
+    color: rgb(255, 0, 0);
+}
+
+#signUpButton{
+    border:none;
+    background-color: transparent;
+    color: rgb(255, 0, 0);
+}
+
+.buttons{
+    background-color: rgba(227, 132, 8, 0.653);
+    color: white
+}
+
+#icon{
+    font-size: 30px;
+    color: goldenrod;
+}
+body{
+    background-color: blanchedalmond;
+    margin-bottom: 10px;
+}
+
+#welcome{
+    font-size: 35px;
+    color: brown;
+}
+
+#logout{
+    float: right;
+    margin-top: 1%;
+    margin-right: 3%;
+    background-color: orangered;
+    border: 2px solid red;
+    color: white;
+}
+.fa-building-columns{
+    font-size: 40px !important;
+}
+
+
+
+#icon{
+    font-size: 30px;
+    color: goldenrod;
+}
+.accounts{
+    background-color: rgba(245, 139, 10, 0.957);
+    border-radius: 20%;
+    text-align: center;
+    padding: 1px;
+    font-size: 25px;
+    color: white;
+}
+
+.accounts:hover{
+    transform: scale(1.1, 1.1);
+}
+
+#withdrawMoney{
+    height: 27vh;
+    width: 42%;
+    float: left;
+    margin-right: 20px;
+}
+
+#depositMoney{
+    height: 27vh;
+    width: 42%;
+    float: right;
+    margin-right: 20px;
+}
+
+#transferMoney{
+    height: 27vh;
+    width: 42%;
+    float: left;
+    margin-left: 10px;
+    margin-top: 3%;
+}
+
+#loans{
+    height: 27vh;
+    width: 42%;
+    float: right;
+    margin-right: 10px;
+    margin-top: 3%;
+}
+.fa-hand-holding-dollar, .fa-money-bill-transfer, .fa-sack-dollar, .fa-piggy-bank{
+    font-size: 50px !important;
+    color: rgba(220, 26, 26, 0.824);
+}
+
+
+.labels{
+    color: red;
+}
+
+.inputFields{
+    width: 60%;
+    border: none;
+    border-bottom: 2px solid orange;
+    background-color: transparent;
+}
+
+#amount, #amountdeposit{
+    border: none;
+    border-bottom: 2px solid orange;
+    background-color: transparent;
+}
+
+#withdaw, #deposit, #transfer, #loan, #calculate{
+    background-color: orange;
+    border: 1px solid red;
+    margin-left: 30%;
+}
+
+#loan{
+    margin-left: 1%;
+}

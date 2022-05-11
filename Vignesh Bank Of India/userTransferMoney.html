@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/2bc25477a1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="icon"><i class="fa-solid fa-building-columns"></i>    Vignesh Bank Of India
+        <button id="logout">Log Out</button>
+        </div>
+    <marquee id="cautionMessage" style="background-color: rgba(255, 153, 0, 0.121); font-size: 20px;"behaviour="alternate" width="100%" height="30px" direction="left" scrollamount="10%">
+        <span style="color:red; font-weight:bold">Caution:</span> We do not call you for asking OTP's. So please do not share any OTP's to any unknown person even if he/she is claiming himself/herself as a bank employee.
+    </marquee>
+    <br><br>
+    <div id="TransferMoneyPage">
+       
+        <label class="labels">Enter the UID of the person to whom the money is transfered:</label><br>
+        <input id="transferUid" type="text" placeholder="UID" class="inputFields"><br><br>
+        <label class="labels">Enter the Username of the person to whom the money is transfered:</label><br>
+        <input id="transferUsername" type="text" placeholder="Username" class="inputFields"><br><br>
+        <label class="labels">Amount to be transfered: ₹</label>
+        <input id="amount" type="number" ><br><br><br>
+        <button id="transfer">Transfer</button>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+     <!-- TODO: Add SDKs for Firebase products that you want to use
+          https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="userTransferMoney.js" type="module"></script>
+    
+</body>
+</html>

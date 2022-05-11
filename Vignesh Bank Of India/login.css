@@ -1,0 +1,143 @@
+.accounts{
+    background-color: rgb(245, 139, 10);
+    border-radius: 20%;
+    text-align: center;
+    padding: 1px;
+    font-size: 25px;
+    color: white;
+    height: 27vh;
+    width: 42%;
+}
+
+.accounts:hover{
+    transform: scale(1.1, 1.1);
+}
+
+#myAccount{
+    float: left;
+    margin-left: 10px;
+}
+
+#transferMoney{
+    float: right;
+    margin-right: 20px;
+}
+
+#loans{
+    float: right;
+    margin-right: 20px;
+    margin-top: 3%;
+}
+
+#repayLoans{
+    float: left;
+    margin-right: 20px;
+    margin-top: 3%;
+}
+.fa-user{
+    font-size: 50px !important;
+    color: rgba(220, 26, 26, 0.824);
+}
+.fa-money-bill-transfer, .fa-money-check-dollar{
+    font-size: 50px !important;
+    color: rgba(220, 26, 26, 0.824);
+}
+.fa-sack-dollar{
+    font-size: 50px !important;
+    color: rgba(220, 26, 26, 0.824);
+}
+
+body{
+    background-color: blanchedalmond;
+    margin-bottom: 10px;
+}
+
+#welcome{
+    font-size: 35px;
+    color: brown;
+}
+.fa-building-columns{
+    font-size: 40px !important;
+}
+
+#icon{
+    font-size: 30px;
+    color: goldenrod;
+}
+body{
+    background-color: blanchedalmond;
+    margin-bottom: 10px;
+}
+
+#welcome{
+    font-size: 35px;
+    color: brown;
+}
+
+#logout{
+    float: right;
+    margin-top: 1%;
+    margin-right: 3%;
+    background-color: orangered;
+    border: 2px solid red;
+    color: white;
+}
+.fa-building-columns{
+    font-size: 40px !important;
+}
+
+
+
+#icon{
+    font-size: 30px;
+    color: goldenrod;
+}
+.accounts{
+    background-color: rgba(245, 139, 10, 0.957);
+    border-radius: 20%;
+    text-align: center;
+    padding: 1px;
+    font-size: 25px;
+    color: white;
+}
+
+.accounts:hover{
+    transform: scale(1.1, 1.1);
+}
+
+
+
+
+.labels{
+    color: red;
+}
+
+.inputFields{
+    width: 60%;
+    border: none;
+    border-bottom: 2px solid orange;
+    background-color: transparent;
+}
+
+#amount, #amountdeposit{
+    border: none;
+    border-bottom: 2px solid orange;
+    background-color: transparent;
+}
+
+#withdaw, #deposit, #transfer, #loan, #calculate, #repayButton{
+    background-color: orange;
+    border: 1px solid red;
+    margin-left: 30%;
+}
+
+#loan{
+    margin-left: 1%;
+}
+
+#repay{
+    width: 20%;
+    border: none;
+    border-bottom: 2px solid orange;
+    background-color: transparent;
+}
