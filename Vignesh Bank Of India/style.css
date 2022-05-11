@@ -21,9 +21,9 @@ body{
 
 #welcomeScreen{
     float: left;
-    margin-left: 25%;
-    height: 400px;
-    width:20%;
+    margin-left: 10%;
+    height: 500px;
+    width:30%;
     background-color: orange;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -37,7 +37,7 @@ body{
 }
 #userLogin{
     float: right;
-    margin-right: 30%
+    margin-right: 10%
 }
 #bankOfIndia{
     font-family: "impact";
