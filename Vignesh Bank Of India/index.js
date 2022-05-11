@@ -19,7 +19,6 @@ const database = firebase.database()
 
 document.getElementById("RegisterButton").onclick = function(){
 //function register(){
-  console.log("You are registered");
   let email = document.getElementById("email").value;
   let username = document.getElementById("username").value;
   let phone = document.getElementById("phoneNumber").value;
@@ -59,6 +58,8 @@ document.getElementById("RegisterButton").onclick = function(){
 
         database_ref.child('users/' + user.uid).set(user_data);
         alert("User Created");
+
+        setInterval(() => window.location.href = `login.html?${user.uid}`, 2000)
         
       })
       .catch(error => {
@@ -132,7 +133,6 @@ document.getElementById("loginButton").onclick = function(){
       }
       );
     })
-    console.log(elementval, elementkey)
     setInterval(() => window.location.href = `login.html?${user.uid}`, 2000)
   
   })
@@ -143,7 +143,6 @@ document.getElementById("loginButton").onclick = function(){
         alert(error_message);
     })
 };
-console.log(elementval)
 
 export let users = userr;
 export const elementvalue = elementval;

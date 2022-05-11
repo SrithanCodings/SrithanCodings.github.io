@@ -24,7 +24,6 @@ const database = firebase.database()
 let transferButton = document.getElementById("transfer");
 
 function searchUser(uid){
-    console.log(uid);
     let elementval = ["users", "user", "user", "user", "user", "user", "user"];
 let elementkey = ["users", "user", "user", "user", "user", "user", "user"];
     
@@ -36,7 +35,6 @@ let elementkey = ["users", "user", "user", "user", "user", "user", "user"];
           elementkey[i] = element.key;
           elementval[i] = element.val();
           i++;
-          setTimeout(() => console.log(elementval[i]), 1000);
           
         }
 
@@ -54,8 +52,6 @@ let elementkey = ["users", "user", "user", "user", "user", "user", "user"];
     let amount =  document.getElementById("amount").value;
     let elementvalue = searchUser(queryString);
     setTimeout(() => {
-      console.log(elementvalue[5]);
-      console.log(elementvalue[0])
       elementvalue[0] = Number(elementvalue[0]);
       if(amount > elementvalue[0]){
         alert(`No sufficient balance in ${elementvalue[5]}'s account`);
@@ -67,28 +63,22 @@ let elementkey = ["users", "user", "user", "user", "user", "user", "user"];
       }
       elementvalue[0] -= amount;
       var database_ref = database.ref()
-      console.log(elementvalue[0]);
   
       // Create User data
       var user_data = {
         Amount : elementvalue[0]
   }
-  console.log(queryString);
       database_ref.child('users/' + queryString).update(user_data);
 
       let elementvalues = searchUser(transferUid);
       setTimeout(() => {
-            console.log(elementvalues[5]);
             if(transferUsername == elementvalues[5]){
-            console.log(elementvalues[0]);
         
             elementvalues[0] = Number(elementvalues[0]);
             amount = Number(amount);
-            console.log(elementvalues[0]);
         
             elementvalues[0] += amount;
             var database_ref = database.ref()
-            console.log(elementvalues[0]);
         
             // Create User data
             var user_data = {
@@ -103,14 +93,6 @@ let elementkey = ["users", "user", "user", "user", "user", "user", "user"];
         setInterval(() => window.location.href = `login.html?${queryString}`, 1000)
       }, 2000)
 
-
-      
-      
-    
-    
-    
-  
-  
   }, 2000)
 })
 

@@ -19,7 +19,6 @@ const firebaseConfig = {
          //const app = initializeApp(firebaseConfig);
   function searchUser(uid){
     
-      console.log(uid);
       let elementval = ["users", "user", "user", "user", "user", "user", "user"];
   let elementkey = ["users", "user", "user", "user", "user", "user", "user"];
       
@@ -31,7 +30,6 @@ const firebaseConfig = {
             elementkey[i] = element.key;
             elementval[i] = element.val();
             i++;
-            setTimeout(() => console.log(elementval[i]), 1000);
             
           }
   
@@ -57,17 +55,13 @@ const firebaseConfig = {
         }
         let elementvalue = searchUser(uid);
         setTimeout(() => {
-          console.log(elementvalue[5]);
         if(username == elementvalue[5]){
-          console.log(elementvalue[0]);
       
           elementvalue[0] = Number(elementvalue[0]);
           amountdeposit = Number(amountdeposit);
-          console.log(elementvalue[0]);
       
           elementvalue[0] += amountdeposit;
           var database_ref = database.ref()
-          console.log(elementvalue[0]);
       
           // Create User data
           var user_data = {

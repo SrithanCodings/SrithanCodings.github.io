@@ -20,7 +20,6 @@ var queryString = location.search.substring(1);
 const database = firebase.database()
 
 function searchUser(uid){
-    console.log(uid);
     let elementval = ["users", "user", "user", "user", "user", "user", "user"];
 let elementkey = ["users", "user", "user", "user", "user", "user", "user"];
     
@@ -32,7 +31,6 @@ let elementkey = ["users", "user", "user", "user", "user", "user", "user"];
           elementkey[i] = element.key;
           elementval[i] = element.val();
           i++;
-          setTimeout(() => console.log(elementval[i]), 1000);
           
         }
 

@@ -18,7 +18,6 @@ const firebaseConfig = {
 let transferButton = document.getElementById("transfer");
 
 function searchUser(uid){
-    console.log(uid);
     let elementval = ["users", "user", "user", "user", "user", "user", "user"];
 let elementkey = ["users", "user", "user", "user", "user", "user", "user"];
     
@@ -30,7 +29,6 @@ let elementkey = ["users", "user", "user", "user", "user", "user", "user"];
           elementkey[i] = element.key;
           elementval[i] = element.val();
           i++;
-          setTimeout(() => console.log(elementval[i]), 1000);
           
         }
 
@@ -54,7 +52,6 @@ transferButton.addEventListener("click", () => {
     }
     let elementvalue = searchUser(userUid);
     setTimeout(() => {
-      console.log(elementvalue[5]);
     if(userUsername == elementvalue[5]){
       elementvalue[0] = Number(elementvalue[0]);
       if(amount > elementvalue[0]){
@@ -63,7 +60,6 @@ transferButton.addEventListener("click", () => {
       }
       elementvalue[0] -= amount;
       var database_ref = database.ref()
-      console.log(elementvalue[0]);
   
       // Create User data
       var user_data = {
@@ -73,17 +69,13 @@ transferButton.addEventListener("click", () => {
 
       let elementvalues = searchUser(transferUid);
       setTimeout(() => {
-            console.log(elementvalues[5]);
             if(transferUsername == elementvalues[5]){
-            console.log(elementvalues[0]);
         
             elementvalues[0] = Number(elementvalues[0]);
             amount = Number(amount);
-            console.log(elementvalues[0]);
         
             elementvalues[0] += amount;
             var database_ref = database.ref()
-            console.log(elementvalues[0]);
         
             // Create User data
             var user_data = {

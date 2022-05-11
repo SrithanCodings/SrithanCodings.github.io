@@ -18,7 +18,6 @@ const firebaseConfig = {
 let withdrawButton = document.getElementById("withdaw");
 
 function searchUser(uid){
-    console.log(uid);
     let elementval = ["users", "user", "user", "user", "user", "user", "user"];
 let elementkey = ["users", "user", "user", "user", "user", "user", "user"];
     
@@ -30,7 +29,6 @@ let elementkey = ["users", "user", "user", "user", "user", "user", "user"];
           elementkey[i] = element.key;
           elementval[i] = element.val();
           i++;
-          setTimeout(() => console.log(elementval[i]), 1000);
           
         }
 
@@ -52,7 +50,6 @@ withdrawButton.addEventListener("click", () => {
     }
     let elementvalue = searchUser(uid);
     setTimeout(() => {
-      console.log(elementvalue[5]);
     if(username == elementvalue[5]){
       elementvalue[0] = Number(elementvalue[0]);
       if(amount > elementvalue[0]){
@@ -61,7 +58,6 @@ withdrawButton.addEventListener("click", () => {
       }
       elementvalue[0] -= amount;
       var database_ref = database.ref()
-      console.log(elementvalue[0]);
   
       // Create User data
       var user_data = {
