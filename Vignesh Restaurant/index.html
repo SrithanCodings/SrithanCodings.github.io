@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Restaurant at your home">
+    <meta name="keywords" content="Vignesh Restaurant, Best Restaurants">
+    <meta name="author" content="Srithan Vignesh">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vignesh Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2bc25477a1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="icon">
+        <i class="fa-solid fa-bell-concierge"></i>
+        <span id="vigneshHotel">Vignesh Restaurant</span>       
+    </div>
+    <br>
+    <div id="loginsignup">
+        <a href="login.html" id="login">Login</a>
+        <a href="index.html" id="logout">Log Out</a>
+    </div>
+    <br> <br>
+    
+    <div id="sidebar">
+        <button id="home" class="buttons"><i class="fa-solid fa-house-chimney"></i>Home</button>
+        <button id="cart" class="buttons"><i class="fa-solid fa-cart-shopping"></i>My Cart  <span id="itemno">0</span></button>
+
+    </div>
+
+
+    <div id="itemsDiv">
+        <div class="items" id="pizza"><img src="Pizza.webp" ><br>Pizza<br><button id="Pizza" class="addToCartPlus">+</button><label id="Pizzalabel" class="cartLabel">0</label><button id="Pizza" class="addToCartMinus">-</button><br><label><br><del>₹300</del><ins>₹250</ins><br>16% OFF</label></div>
+        <div class="items" id="biryani"><img src="Biryani.webp"><br> Biryani <br><button id="Biryani" class="addToCartPlus">+</button><label id="Biryanilabel" class="cartLabel">0</label><button id="Biryani" class="addToCartMinus">-</button><br><br><label><del>₹500</del><ins>₹350</ins><br></label>30% OFF</div>
+        <div class="items" id="sandwich"><img src="Sandwich.webp"><br>Sandwich<br><button id="Sandwich" class="addToCartPlus">+</button><label id="Sandwichlabel" class="cartLabel">0</label><button id="Sandwich" class="addToCartMinus">-</button><br><label><br><del>₹100</del><ins>₹80</ins><br>20% OFF</label></div><br>
+        <div class="items" id="chickenRoll"><img src="ChickenRoll.webp"><br>Chicken Roll<br><button id="ChickenRoll" class="addToCartPlus">+</button><label id="ChickenRolllabel" class="cartLabel">0</label><button id="ChickenRoll" class="addToCartMinus">-</button><br><label><br><del>₹200</del><ins>₹150</ins><br>25% OFF</label></div>
+        <div class="items" id="chicken"><img src="Chicken.webp"><br>Chicken Leg Piece<br><button id="Chicken" class="addToCartPlus">+</button><label id="Chickenlabel" class="cartLabel">0</label><button id="Chicken" class="addToCartMinus">-</button><br><label><br><del>₹150</del><ins>₹100</ins><br>33% OFF</label></div>
+        <div class="items" id="frenchFries"><img src="FrenchFries.webp"><br>French Fries<br><button id="FrenchFries" class="addToCartPlus">+</button><label id="FrenchFrieslabel" class="cartLabel">0</label><button id="FrenchFries" class="addToCartMinus">-</button><br><label><br><del>₹100</del><ins>₹80</ins><br>20% OFF</label></div>
+        <div class="items" id="idli"><img src="Idli.webp"><br>Idli<br><button id="Idli" class="addToCartPlus">+</button><label id="Idlilabel" class="cartLabel">0</label><button id="Idli" class="addToCartMinus">-</button><br><label><br><del>₹100</del><ins>₹75</ins><br>25% OFF</label></div>
+        <div class="items" id="masaladosa"><img src="MasalaDosa.webp"><br>Masala Dosa<br><button id="MasalaDosa" class="addToCartPlus">+</button><label id="MasalaDosalabel" class="cartLabel">0</label><button id="MasalaDosa" class="addToCartMinus">-</button><br><label><br><del>₹50</del><ins>₹150</ins><br>33 OFF%</label></div>
+        <div class="items" id="panipuri"><img src="PaniPuri.webp"><br>Pani Puri<br><button id="PaniPuri" class="addToCartPlus">+</button><label id="PaniPurilabel" class="cartLabel">0</label><button id="PaniPuri" class="addToCartMinus">-</button><br><label><br><del>₹30</del><ins>₹20</ins><br>33% OFF</label></div>
+        <div class="items" id="parota"><img src="Parota.webp"><br>Parota<br><button id="Parota" class="addToCartPlus">+</button><label id="Parotalabel" class="cartLabel">0</label><button id="Parota" class="addToCartMinus">-</button><br><label><br><del>₹150</del><ins>₹200</ins><br>25% OFF</label></div>
+        <div class="items" id="paneer"><img src="PaneerMasala.webp"><br>Panner Masala<br><button id="PaneerMasala" class="addToCartPlus">+</button><label id="PaneerMasalalabel" class="cartLabel">0</label><button id="PaneerMasala" class="addToCartMinus">-</button><br><label><br><del>₹100</del><ins>₹80</ins><br>20% OFF</label></div>
+        <div class="items" id="gobi"><img src="Gobi.webp"><br>Gobi Machuri<br><button id="Gobi" class="addToCartPlus">+</button><label id="Gobilabel" class="cartLabel">0</label><button id="Gobi" class="addToCartMinus">-</button><br><label><br><del>₹50</del><ins>₹40</ins><br>20% OFF</label></div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+     <!-- TODO: Add SDKs for Firebase products that you want to use
+          https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

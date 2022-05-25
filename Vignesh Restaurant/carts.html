@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <link rel="stylesheet" href="carts.css">
+    <script src="https://kit.fontawesome.com/2bc25477a1.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="icon">
+        <i class="fa-solid fa-bell-concierge"></i>
+        <span id="vigneshHotel">Vignesh Restaurant</span>       
+    </div>
+    <br>
+    <div id="loginsignup">
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+    </div>
+    <br> <br>
+    <div id="sidebar">
+        <button id="home" class="buttons"><i class="fa-solid fa-house-chimney"></i>Home</button>
+        <button id="cart" class="buttons"><i class="fa-solid fa-cart-shopping"></i>My Cart  <span id="itemno">0</span></button>
+
+    </div>
+    <div id="orderItems">
+        <label class="orderItemsClass" id="total">Total</label><br><br>
+        <label class="orderItemsClass" id="gst">GST(12%)</label><br><br>
+        
+        <label class="orderItemsClass" id="grandTotal">Grand Total</label><br><br>
+        <button id="orderNow">Order Now</button>
+    </div>
+    <div id="item">
+        
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+     <!-- TODO: Add SDKs for Firebase products that you want to use
+          https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="carts.js" type="module"></script>
+</body>
+</html>

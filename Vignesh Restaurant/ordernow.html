@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now</title>
+    <script src="https://kit.fontawesome.com/2bc25477a1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="ordernow.css">
+</head>
+<body>
+    <div id="icon"><i class="fa-solid fa-building-columns"></i>    Vignesh Bank Of India</div>
+    <marquee id="cautionMessage" style="font-size: 20px; background-color: rgba(255, 153, 0, 0.121);"behaviour="alternate" width="100%" height="30px" direction="left" scrollamount="10%">
+        <span style="color:red; font-weight:bold">Caution:</span> We do not call you for asking OTP's. So please do not share any OTP's to any unknown person even if he/she is claiming himself/herself as a bank employee.
+    </marquee>
+    <br><br>
+
+    <div id="userLogin" class="user">
+        <br><br>
+        <i class="fa-regular fa-user "></i>
+        <br><br>
+        <label class="inputs">Enter the UID</label><br>
+        <input id="uid" type="text" placeholder="UID" class="inputFields"><br><br>
+        <label class="inputs">Enter the E-mail</label><br>
+        <input id="email" type="email" placeholder="Username" class="inputFields"><br><br>
+        <label class="inputs">Enter the password</label><br>
+        <input id="password" type="password" placeholder="Password" class="inputFields"><br><br>
+        <label id="amount">Amount to be paid: ₹500</label><br><br>
+        <button id="pay">PAY</button>
+    </div>
+
+    <div id="tick">
+
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+     <!-- TODO: Add SDKs for Firebase products that you want to use
+          https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+ 
+     <!-- Our script must be loaded after firebase references -->
+     <script src="ordernow.js" type="module"></script>
+</body>
+</html>

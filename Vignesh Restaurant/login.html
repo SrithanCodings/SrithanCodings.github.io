@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://kit.fontawesome.com/2bc25477a1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div id="icon">
+        <i class="fa-solid fa-bell-concierge"></i>
+        <span id="vigneshHotel">Vignesh Restaurant</span>       
+    </div>
+    <br><br>
+    <div id="userLogin">
+        <i class="fa-solid fa-utensils"></i><br><br>
+        <i class="fa-solid fa-user"></i>
+        <input type="text" placeholder="E-mail" id="loginemail"><br><br>
+        <i class="fa-solid fa-lock"></i>
+        <input type="password" placeholder="Password" id="loginPassword"><br><br>
+        <button id="loginButton">Login</button>
+        <p>Not yet registered? <button id="signUpButton"><u>Sign Up</u></button></p><br>
+
+    </div>
+
+    <div id="userRegister" class="user">
+
+        <i class="fa-solid fa-utensils"></i><br><br>
+
+        <i class="fa-solid fa-user"></i><input type="text" placeholder="Username" id="username" class="bankLogin">
+            <br><br>
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" placeholder="Email" id="email" class="bankLogin">
+            <br><br>
+            <i class="fa-solid fa-phone"></i>
+            <input type="tel" placeholder="Phone Number" id="phoneNumber" class="bankLogin">
+            <br><br>
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="Password" id="password" class="bankLogin">
+            <br><br>
+            <button id="RegisterButton" class="buttons">Register >></button>
+            
+            
+            <p>Aldready a user? <button id="login"><u>Login</u></button></p>
+        
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+     <!-- TODO: Add SDKs for Firebase products that you want to use
+          https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

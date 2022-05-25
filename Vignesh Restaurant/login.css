@@ -1,0 +1,28 @@
+.fa-bell-concierge{
+    font-size: 10vh;
+}
+
+#vigneshHotel{
+    font-size: 7vh;
+}
+.fa-utensils{
+    font-size: 100px!important;
+    margin-left: 5%;
+}
+
+#userLogin{
+    margin-left: 40%;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    margin-right: 40%;
+}
+
+#userRegister{
+    margin-left: 40%;
+    align-items: center;
+    justify-items: center;
+    display: none;
+    text-align: center;
+    margin-right: 40%;
+}
