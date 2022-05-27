@@ -222,3 +222,64 @@ if(queryString == ""){
 else{
   document.getElementById("login").style.display = "none";
 }
+const searchbox = document.getElementById("searchbox")
+
+window.addEventListener("keydown", (key) => {
+if(key.key == "Enter"){
+  const searchbox = document.getElementById("searchbox").value;
+  const itemsName = document.getElementsByClassName("items");
+  let itemsNameId = [];
+  for(i = 0; i < itemsName.length; i++){
+    console.log(itemsNameId)
+    itemsNameId.push(itemsName[i].id);
+  }
+  /*itemsName.forEach(item => {
+    itemsNameId.push(item.id);
+  })*/
+  if(searchbox.length == 0){
+    document.getElementById("img").style.display = "block";
+    document.getElementById('noItems').style.display = "none";
+
+
+    for(i = 0; i < itemsName.length; i++){
+      document.getElementById(itemsName[i].id).style.display = "block";
+    }
+    return;
+  }
+  console.log(itemsNameId)
+  
+
+for(let i = 0; i < searchbox.length; i++){
+  for(let j = 0; j < itemsNameId.length; j++){
+    console.log(itemsNameId[j])
+    if(searchbox[i] == itemsNameId[j][i]){
+      document.getElementById(itemsNameId[j]).style.display = "block";
+
+    }
+    if(searchbox[i] != itemsNameId[j][i]){
+      console.log(itemsNameId[j]);
+      document.getElementById("img").style.display = "none";
+      console.log(itemsNameId[j])
+      document.getElementById(itemsNameId[j]).style.display = "none";
+      itemsNameId.splice(j, 1);
+      console.log(itemsNameId)
+      j--;
+    }
+    
+  }
+}
+let itemDisplay = false;
+  for(i = 0; i < itemsName.length; i++){
+    if(document.getElementById(itemsName[i].id).style.display == "block"){
+      itemDisplay = true;
+    }
+  }
+  if(itemDisplay == false){
+    document.getElementById('noItems').style.display = "block";
+  }
+  else{
+    document.getElementById('noItems').style.display = "none";
+
+  }
+}
+})

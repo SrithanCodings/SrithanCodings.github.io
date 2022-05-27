@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vignesh Restaurant</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
     <script src="https://kit.fontawesome.com/2bc25477a1.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -17,6 +18,8 @@
         <span id="vigneshHotel">Vignesh Restaurant</span>       
     </div>
     <br>
+    <i class="fa-brands fa-searchengin"></i>
+    <input id="searchbox" placeholder="Search" >
     <div id="loginsignup">
         <a href="login.html" id="login">Login</a>
         <a href="index.html" id="logout">Log Out</a>
@@ -28,6 +31,14 @@
         <button id="cart" class="buttons"><i class="fa-solid fa-cart-shopping"></i>My Cart  <span id="itemno">0</span></button>
 
     </div>
+<br>
+    <img src="homes.png" id="img">
+
+    <div id="noItems">
+        <i class="fa-solid fa-face-frown"></i><br>
+        Oops!<br>
+        We could not understand what you mean, try rephrasing the query.    
+    </div>
 
 
     <div id="itemsDiv">
@@ -38,11 +49,27 @@
         <div class="items" id="chicken"><img src="Chicken.webp"><br>Chicken Leg Piece<br><button id="Chicken" class="addToCartPlus">+</button><label id="Chickenlabel" class="cartLabel">0</label><button id="Chicken" class="addToCartMinus">-</button><br><label><br><del>₹150</del><ins>₹100</ins><br>33% OFF</label></div>
         <div class="items" id="frenchFries"><img src="FrenchFries.webp"><br>French Fries<br><button id="FrenchFries" class="addToCartPlus">+</button><label id="FrenchFrieslabel" class="cartLabel">0</label><button id="FrenchFries" class="addToCartMinus">-</button><br><label><br><del>₹100</del><ins>₹80</ins><br>20% OFF</label></div>
         <div class="items" id="idli"><img src="Idli.webp"><br>Idli<br><button id="Idli" class="addToCartPlus">+</button><label id="Idlilabel" class="cartLabel">0</label><button id="Idli" class="addToCartMinus">-</button><br><label><br><del>₹100</del><ins>₹75</ins><br>25% OFF</label></div>
-        <div class="items" id="masaladosa"><img src="MasalaDosa.webp"><br>Masala Dosa<br><button id="MasalaDosa" class="addToCartPlus">+</button><label id="MasalaDosalabel" class="cartLabel">0</label><button id="MasalaDosa" class="addToCartMinus">-</button><br><label><br><del>₹50</del><ins>₹150</ins><br>33 OFF%</label></div>
+        <div class="items" id="masaladosa"><img src="MasalaDosa.webp"><br>Masala Dosa<br><button id="MasalaDosa" class="addToCartPlus">+</button><label id="MasalaDosalabel" class="cartLabel">0</label><button id="MasalaDosa" class="addToCartMinus">-</button><br><label><br><del>₹150</del><ins>₹100</ins><br>33% OFF</label></div>
         <div class="items" id="panipuri"><img src="PaniPuri.webp"><br>Pani Puri<br><button id="PaniPuri" class="addToCartPlus">+</button><label id="PaniPurilabel" class="cartLabel">0</label><button id="PaniPuri" class="addToCartMinus">-</button><br><label><br><del>₹30</del><ins>₹20</ins><br>33% OFF</label></div>
-        <div class="items" id="parota"><img src="Parota.webp"><br>Parota<br><button id="Parota" class="addToCartPlus">+</button><label id="Parotalabel" class="cartLabel">0</label><button id="Parota" class="addToCartMinus">-</button><br><label><br><del>₹150</del><ins>₹200</ins><br>25% OFF</label></div>
+        <div class="items" id="parota"><img src="Parota.webp"><br>Parota<br><button id="Parota" class="addToCartPlus">+</button><label id="Parotalabel" class="cartLabel">0</label><button id="Parota" class="addToCartMinus">-</button><br><label><br><del>₹200</del><ins>₹150</ins><br>25% OFF</label></div>
         <div class="items" id="paneer"><img src="PaneerMasala.webp"><br>Panner Masala<br><button id="PaneerMasala" class="addToCartPlus">+</button><label id="PaneerMasalalabel" class="cartLabel">0</label><button id="PaneerMasala" class="addToCartMinus">-</button><br><label><br><del>₹100</del><ins>₹80</ins><br>20% OFF</label></div>
         <div class="items" id="gobi"><img src="Gobi.webp"><br>Gobi Machuri<br><button id="Gobi" class="addToCartPlus">+</button><label id="Gobilabel" class="cartLabel">0</label><button id="Gobi" class="addToCartMinus">-</button><br><label><br><del>₹50</del><ins>₹40</ins><br>20% OFF</label></div>
+        <div class="items" id="icecream"><img src="IceCream.webp" ><br>Ice Cream<br><button id="IceCream" class="addToCartPlus">+</button><label id="IceCreamlabel" class="cartLabel">0</label><button id="IceCream" class="addToCartMinus">-</button><br><label><br><del>₹100</del><ins>₹80</ins><br>20% OFF</label></div>
+        <div class="items" id="soup"><img src="Soup.webp" ><br>Soup<br><button id="Soup" class="addToCartPlus">+</button><label id="Souplabel" class="cartLabel">0</label><button id="Soup" class="addToCartMinus">-</button><br><label><br><del>₹100</del><ins>₹80</ins><br>20% OFF</label></div>
+        <div class="items" id="noodles"><img src="Noodles.webp" ><br>Noodles<br><button id="Noodles" class="addToCartPlus">+</button><label id="Noodleslabel" class="cartLabel">0</label><button id="Noodles" class="addToCartMinus">-</button><br><label><br><del>₹200</del><ins>₹100</ins><br>50% OFF</label></div>
+        <div class="items" id="fishfry"><img src="FishFry.webp" ><br>Fish Fry<br><button id="FishFry" class="addToCartPlus">+</button><label id="FishFrylabel" class="cartLabel">0</label><button id="FishFry" class="addToCartMinus">-</button><br><label><br><del>₹200</del><ins>₹150</ins><br>20% OFF</label></div>
+        <div class="items" id="eggbiryani"><img src="EggBiryani.webp" ><br>Egg Biryani<br><button id="EggBiryani" class="addToCartPlus">+</button><label id="EggBiryanilabel" class="cartLabel">0</label><button id="EggBiryani" class="addToCartMinus">-</button><br><label><br><del>₹200</del><ins>₹150</ins><br>20% OFF</label></div>
+        <div class="items" id="northindianthali"><img src="NorthIndianThali.webp" ><br>North Indian Thali<br><button id="NorthIndianThali" class="addToCartPlus">+</button><label id="NorthIndianThalilabel" class="cartLabel">0</label><button id="NorthIndianThali" class="addToCartMinus">-</button><br><label><br><del>₹300</del><ins>₹200</ins><br>33% OFF</label></div>
+        <div class="items" id="southindianthali"><img src="SouthIndianThali.webp" ><br>South Indian Thali<br><button id="SouthIndianThali" class="addToCartPlus">+</button><label id="SouthIndianThalilabel" class="cartLabel">0</label><button id="SouthIndianThali" class="addToCartMinus">-</button><br><label><br><del>₹300</del><ins>₹20</ins><br>33% OFF</label></div>
+        <div class="items" id="cocacola"><img src="CocaCola.webp" ><br>Coca Cola<br><button id="CocaCola" class="addToCartPlus">+</button><label id="CocaColalabel" class="cartLabel">0</label><button id="CocaCola" class="addToCartMinus">-</button><br><label><br><del>₹200</del><ins>₹150</ins><br>20% OFF</label></div>
+        <div class="items" id="cake"><img src="Cake.webp" ><br>Cake<br><button id="Cake" class="addToCartPlus">+</button><label id="Cakelabel" class="cartLabel">0</label><button id="Cake" class="addToCartMinus">-</button><br><label><br><del>₹1000</del><ins>₹800</ins><br>20% OFF</label></div>
+        <div class="items" id="vegbiryani"><img src="VegBiryani.webp" ><br>Veg Biryani<br><button id="VegBiryani" class="addToCartPlus">+</button><label id="VegBiryanilabel" class="cartLabel">0</label><button id="VegBiryani" class="addToCartMinus">-</button><br><label><br><del>₹200</del><ins>₹150</ins><br>25% OFF</label></div>
+        <div class="items" id="rotti"><img src="Rotti.webp" ><br>Rotti<br><button id="Rotti" class="addToCartPlus">+</button><label id="Rottilabel" class="cartLabel">0</label><button id="Rotti" class="addToCartMinus">-</button><br><label><br><del>₹100</del><ins>₹80</ins><br>20% OFF</label></div>
+        <div class="items" id="chickengravy"><img src="ChcikenGravy.webp" ><br>Chicken Gravy<br><button id="ChickenGravy" class="addToCartPlus">+</button><label id="ChickenGravylabel" class="cartLabel">0</label><button id="ChickenGravy" class="addToCartMinus">-</button><br><label><br><del>₹400</del><ins>₹300</ins><br>20% OFF</label></div>
+        <div class="items" id="juice"><img src="Juice.webp" ><br>Juice<br><button id="Juice" class="addToCartPlus">+</button><label id="Juicelabel" class="cartLabel">0</label><button id="Juice" class="addToCartMinus">-</button><br><label><br><del>₹100</del><ins>₹80</ins><br>20% OFF</label></div>
+        <div class="items" id="fishcurry"><img src="FishCurry.webp" ><br>Fish Curry<br><button id="FishCurry" class="addToCartPlus">+</button><label id="FishCurrylabel" class="cartLabel">0</label><button id="FishCurry" class="addToCartMinus">-</button><br><label><br><del>₹500</del><ins>₹250</ins><br>50% OFF</label></div>
+        <div class="items" id="mysorepak"><img src="MysorePak.webp" ><br>Mysore Pak<br><button id="MysorePak" class="addToCartPlus">+</button><label id="MysorePaklabel" class="cartLabel">0</label><button id="MysorePak" class="addToCartMinus">-</button><br><label><br><del>₹1000</del><ins>₹800</ins><br>20% OFF</label></div>
+
     </div>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
 
@@ -50,6 +77,8 @@
           https://firebase.google.com/docs/web/setup#available-libraries -->
      <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
      <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
-    <script type="module" src="script.js"></script>
+    <script type="module" src="script.js">
+        
+    </script>
 </body>
 </html>
