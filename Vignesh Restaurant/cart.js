@@ -18,5 +18,10 @@ export let amount = [
     ["NorthIndianThali", 200],
     ["EggBiryani", 150],
     ["CocaCola", 150],
-    ["Cake", 800]
+    ["Cake", 800],
+    ["Veg Biryani", 150],
+    ["ChickenGravy", 300],
+    ["Juice", 80],
+    ["FishCurry", 250],
+    ["MysorePak", 200]
 ]
