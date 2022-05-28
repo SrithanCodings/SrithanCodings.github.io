@@ -39,9 +39,11 @@ var firebaseRef = firebase.database().ref('users/' + queryString + '/My Cart/');
                 )
             });
  
-setTimeout(() => {  console.log(elementval.length)
+setTimeout(() => { 
 
   for(i = 0; i < elementval.length; i++){
+    console.log(elementkey[i])
+
     if(elementval[i] == 0){
       console.log("hello");
     }
@@ -60,7 +62,6 @@ setTimeout(() => {  console.log(elementval.length)
       item.append(divTag);
       console.log("HELLO");
       itemNumber += elementval[i];
-      
     }
   }
   addToCart = document.querySelectorAll(".addToCartPlus");
@@ -76,7 +77,7 @@ setTimeout(() => {  console.log(elementval.length)
    document.getElementById("gst").textContent = `GST(12%): ₹${gst}`;
    grandTotal = gst + totalAmount;
    document.getElementById("grandTotal").textContent = `Grand Total: ₹${grandTotal}`
- }, 2000)
+ }, 4000)
 
 const items = document.getElementById("item");
 let addToCart = [];
@@ -96,7 +97,12 @@ let grandTotal = gst + totalAmount;
 
 
 function checkPrice( i){
-  return amount[i][1];
+  for(var j = 0; j < elementval.length; j++){
+    if(elementkey[i] == amount[j][0]){
+      break;
+    }
+  }
+  return amount[j][1];
 }
 
 setTimeout(() => {addToCart.forEach(cart => {

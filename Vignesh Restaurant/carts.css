@@ -132,3 +132,58 @@ img{
     border: 2px solid red;
     color: white;
 }
+
+@media only screen and (max-width: 700px){
+    #vigneshHotel{
+        font-size: 4vh;
+        margin-right: 50px;
+    }
+    
+    .fa-bell-concierge{
+        font-size: 6vh;
+    }
+
+    #sidebar{
+        margin-left: 5%;
+    }
+
+    #orderItems{
+        width: 96%;
+        margin: 10px;
+        position: static;
+    }
+    img{
+        height: 50px;
+        width: 50px;
+    }
+
+    .itemName{
+        font-size: 3vh;
+        margin-left: 0px;
+    }
+
+    .addToCartPlus{
+        height: 25px;
+        width: 25px;
+        text-align: center;
+        font-size: 8px;
+    }
+    
+    .addToCartMinus{
+        height: 25px;
+        width: 25px;
+        text-align: center;
+        font-size: 8px;
+    }
+    
+    .cartLabel{
+        font-size: 10px;
+        width: 10px;
+    }
+    #addtocart{
+        height: 25px;
+        width: 90px;
+        float:right;
+    margin-right: 85%;
+    }
+}
