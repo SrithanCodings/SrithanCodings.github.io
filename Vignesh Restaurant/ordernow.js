@@ -45,6 +45,8 @@ let elementkey = ["users", "user", "user", "user", "user", "user", "user"];
    var a = queryString.split('|');
 
 document.getElementById("pay").onclick = function(){
+    document.getElementById("loader").style.display = "block";
+    document.getElementById("userLogin").style.display = "none";
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
     let transferUid = "KDbQoGrhExXg9Sk6UuWCi6k93oK2";
@@ -100,7 +102,7 @@ document.getElementById("pay").onclick = function(){
         }
             database_ref.child('users/' + transferUid).update(user_data);
             setTimeout(() => {
-              
+              document.getElementById("loader").style.display = "none";
               document.getElementById("userLogin").style.display = "none";
               let svg = document.createElement("svg");
               svg.id = "svgId";

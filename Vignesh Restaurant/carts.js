@@ -14,6 +14,8 @@ const firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 let cartArray = []
+let addToCart = [];
+let addToCartMinus = [];
 
 const database = firebase.database();
 var queryString = location.search.substring(1);
@@ -77,11 +79,12 @@ setTimeout(() => {
    document.getElementById("gst").textContent = `GST(12%): ₹${gst}`;
    grandTotal = gst + totalAmount;
    document.getElementById("grandTotal").textContent = `Grand Total: ₹${grandTotal}`
+   document.getElementById("main").style.display ="block"
+  document.getElementById("loader").style.display ="none"
  }, 4000)
 
 const items = document.getElementById("item");
-let addToCart = [];
-let addToCartMinus = [];
+
 
 const itemno = document.querySelector("#itemno");
 let itemNumber = 0;
@@ -104,8 +107,9 @@ function checkPrice( i){
   }
   return amount[j][1];
 }
-
-setTimeout(() => {addToCart.forEach(cart => {
+setTimeout(() => {
+addToCart.forEach(cart => {
+  console.log("hello");
   cart.addEventListener("click", () => {
   itemNumber++;
   itemno.textContent = itemNumber;
@@ -258,7 +262,7 @@ addToCartMinus.forEach(cart => {
     
 
         
-})})}, 2000)
+})})}, 4000)
 document.getElementById("orderNow").addEventListener("click", () => window.location.href = `ordernow.html?${queryString}|${grandTotal}`);
 
 document.getElementById("home").addEventListener("click", () => window.location.href = `index.html?${queryString}`);

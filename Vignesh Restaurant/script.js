@@ -162,6 +162,8 @@ addToCartMinus.forEach(cart => {
           
 })})
 
+
+
 setTimeout(() => {
   console.log(elementval.length)
 
@@ -200,6 +202,9 @@ setTimeout(() => {
     
   }
   }
+  document.getElementById("main").style.display ="block"
+  document.getElementById("loader").style.display ="none"
+
 }, 2000)
 
 cartLabel.forEach(cart => {
@@ -226,7 +231,7 @@ const searchbox = document.getElementById("searchbox")
 
 window.addEventListener("keydown", (key) => {
 if(key.key == "Enter"){
-  const searchbox = document.getElementById("searchbox").value;
+  let searchbox = document.getElementById("searchbox").value;
   const itemsName = document.getElementsByClassName("items");
   let itemsNameId = [];
   for(i = 0; i < itemsName.length; i++){
@@ -247,7 +252,7 @@ if(key.key == "Enter"){
     return;
   }
   console.log(itemsNameId)
-  
+  searchbox = searchbox.toLowerCase();
 
 for(let i = 0; i < searchbox.length; i++){
   for(let j = 0; j < itemsNameId.length; j++){
